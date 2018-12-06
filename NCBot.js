@@ -41,7 +41,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/unb3l13v3r/NCBot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/unb3l13v3r/NCBot/lang/langIndex.json", function (json) {
             var link = NCBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -169,16 +169,16 @@
         status: false,
         name: "NCBot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/unb3l13v3r/NCBot/master/NCBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/unb3l13v3r/NCBot/NCBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/unb3l13v3r/NCBot/master/lang/en.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/unb3l13v3r/NCBot/lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "NCBot",
             language: "english",
-            chatLink: "https://rawgit.com/unb3l13v3r/NCBot/master/lang/en.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/unb3l13v3r/NCBot/lang/en.json",
             maximumAfk: 60,
             afkRemoval: false,
             maximumDc: 15,
@@ -222,7 +222,7 @@
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                OP: "https://rawgit.com/unb3l13v3r/NCBot/master/blackList/OP.json"
+                OP: "https://cdn.jsdelivr.net/gh/unb3l13v3r/NCBot/blackList/OP.json"
             }
         },
         room: {
